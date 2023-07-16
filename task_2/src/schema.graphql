@@ -1,0 +1,45 @@
+type Query {
+  joinedForums: [Forum!]!
+  availableForums: [Forum!]!
+  members: [User!]!
+  requests: [Request!]!
+}
+
+type Mutation {
+  createForum(title: String!, isPrivate: Boolean!): Forum!
+  joinToForum(forumId: ID!): Forum!
+  selectForum(forumId: ID!): Forum!
+  postMessage(content: String!): Message!
+  sendRequestToJoin(forumId: ID!): Request!
+  processRequest(requestId: ID!, status: Boolean!): [Request]!
+}
+
+type Forum {
+  id: ID!
+  title: String!
+  isPrivate: Boolean!
+  admin: User!
+  messages: [Message]
+  membersIds: [String!]!
+  requests: [Request!]!
+}
+
+type Message {
+  id: ID!
+  content: String!
+  createdAt: String!
+  author: String!
+}
+
+type User {
+  id: ID!
+  name: String!
+  picture: String!
+  joinedForumsIds: [String!]!
+  selectedForum: Forum
+}
+
+type Request {
+  id: ID!
+  user: User!
+}

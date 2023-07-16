@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "title": "Forum 1",
+    "membersIds": [
+      "1",
+      "2"
+    ],
+    "messages": [
+      {
+        "id": "1",
+        "content": "Hello!",
+        "author": "John Doe",
+        "createdAt": "10:45:34 05/07/2023"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Forum 2",
+    "membersIds": [
+      "1",
+      "3",
+      "5"
+    ],
+    "messages": [
+      {
+        "id": "2",
+        "content": "Nice to meet you, Alice!",
+        "author": "Alice Johnson",
+        "createdAt": "20:35:04 06/07/2023"
+      },
+      {
+        "id": "1",
+        "content": "Welcome to Forum 2!",
+        "author": "John Doe",
+        "createdAt": "20:33:04 06/07/2023"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Forum 3",
+    "membersIds": [
+      "2",
+      "4"
+    ],
+    "messages": [
+      {
+        "id": "3",
+        "content": "Welcome to Forum 3!",
+        "author": "Jane Smith",
+        "createdAt": "15:33:07 06/07/2023"
+      },
+      {
+        "id": "2",
+        "content": "Hi, Alice!",
+        "author": "Jane Smith",
+        "createdAt": "14:23:14 06/07/2023"
+      },
+      {
+        "id": "1",
+        "content": "Hello, Jane!",
+        "author": "Alice Johnson",
+        "createdAt": "20:33:04 05/07/2023"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Forum 4",
+    "membersIds": [
+      "1",
+      "2",
+      "3"
+    ],
+    "messages": [
+      {
+        "id": "3",
+        "content": "Welcome to Forum 4!",
+        "author": "Bob Anderson",
+        "createdAt": "12:48:27 15/07/2023"
+      },
+      {
+        "id": "2",
+        "content": "Nice to meet you, Jane!",
+        "author": "Jane Smith",
+        "createdAt": "12:44:13 15/07/2023"
+      },
+      {
+        "id": "1",
+        "content": "Hi everyone!",
+        "author": "Alice Johnson",
+        "createdAt": "12:36:05 15/07/2023"
+      }
+    ]
+  }
+]
